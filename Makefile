@@ -1,22 +1,26 @@
 NAME = libft.a
-FLAG = -Wall -Wextra -Werror
-SRC = $(shell find . ! -name "ft_lst*.c" -name "ft_*.c")
-BONUS = $(shell find . -name "ft_lst*.c")
-OBJ = $(SRC:.c=.o)
+CC = cc
+CFLAGS = -Wall -Wextra -Werror
 
+M_SRCS =	$(wildcard ft_*.c)
+
+M_OBJS = $(M_SRCS:.c=.o)
+B_OBJS = $(B_SRCS:.c=.o)
 
 all: $(NAME)
 
-$(NAME):
-	gcc $(FLAG) -c $(SRC)
-	ar rc $(NAME) *.o
-bonus:
-	gcc $(FLAG) -c $(BONUS)
-	ar rc $(NAME) *.o
-clean:
-	/bin/rm -f  *.o
-fclean: clean
-	/bin/rm -f $(NAME)
-re: fclean all
+$(NAME): $(M_OBJS)
+	ar rc $(NAME) $(M_OBJS)
 
-.PHONY: all bonus clean fclean re
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	rm -f $(M_OBJS) $(B_OBJS)
+
+fclean:
+	rm -f $(M_OBJS) $(NAME) $(B_OBJS)
+
+re: fclean all
+	
+.PHONY: all clean fclean re
