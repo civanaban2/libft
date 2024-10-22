@@ -3,12 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cari <cari@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: urmet <urmet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/20 19:17:04 by cari              #+#    #+#             */
-/*   Updated: 2024/10/20 19:25:09 by cari             ###   ########.fr       */
+/*   Updated: 2024/10/22 22:41:39 by urmet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+The ft_calloc() function contiguously allocates enough space for count objects
+that are size bytes of memory each and returns a pointer to the allocated memory.
+The allocated memory is filled with bytes of value zero.
+*/
 
 #include "libft.h"
 

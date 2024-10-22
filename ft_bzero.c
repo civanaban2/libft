@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cari <cari@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: urmet <urmet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 20:44:33 by cari              #+#    #+#             */
-/*   Updated: 2024/10/15 21:07:49 by cari             ###   ########.fr       */
+/*   Updated: 2024/10/22 22:35:56 by urmet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+The ft_bzero() function writes n zeroed bytes to the string s.  If n is zero,
+ft_bzero() does nothing.
+*/
 
 #include "libft.h"
 

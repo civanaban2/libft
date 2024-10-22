@@ -3,12 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cari <cari@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: urmet <urmet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/20 19:25:18 by cari              #+#    #+#             */
-/*   Updated: 2024/10/20 19:33:50 by cari             ###   ########.fr       */
+/*   Updated: 2024/10/22 22:44:56 by urmet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+The ft_strdup() function allocates sufficient memory for a copy of the string s1,
+does the copy, and returns a pointer to it. The pointer may subsequently be used
+as an argument to the function free(3).
+*/
 
 #include "libft.h"
 

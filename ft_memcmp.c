@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cari <cari@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: urmet <urmet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/20 18:09:20 by cari              #+#    #+#             */
-/*   Updated: 2024/10/20 18:11:47 by cari             ###   ########.fr       */
+/*   Updated: 2024/10/22 22:41:08 by urmet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+The ft_memcmp() function compares byte string s1 against byte string s2.
+Both strings are assumed to be n bytes long.
+*/
 
 #include "libft.h"
 

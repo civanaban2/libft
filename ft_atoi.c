@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cari <cari@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: urmet <urmet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 16:52:38 by cari              #+#    #+#             */
-/*   Updated: 2024/10/20 17:19:27 by cari             ###   ########.fr       */
+/*   Updated: 2024/10/22 22:33:46 by urmet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+The ft_atoi() function converts the initial portion of the string pointed to by
+str to int representation.
+*/
 
 int	ft_atoi(const char *str)
 {

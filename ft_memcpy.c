@@ -6,14 +6,14 @@
 /*   By: urmet <urmet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 21:08:17 by cari              #+#    #+#             */
-/*   Updated: 2024/10/22 22:16:07 by urmet            ###   ########.fr       */
+/*   Updated: 2024/10/22 22:42:13 by urmet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 The ft_memcpy() function copies n bytes from memory area src to memory area dst.
 If dst and src overlap, behavior is undefined.
-Applications in which dst and src might overlap should use memmove(3) instead.
+Applications in which dst and src might overlap should use ft_memmove(3) instead.
 */
 
 #include "libft.h"

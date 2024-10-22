@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cari <cari@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: urmet <urmet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/20 18:03:12 by cari              #+#    #+#             */
-/*   Updated: 2024/10/20 18:07:32 by cari             ###   ########.fr       */
+/*   Updated: 2024/10/22 22:40:33 by urmet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+The ft_memchr() function locates the first occurrence of c (converted to an
+unsigned char) in string s.
+*/
 
 #include "libft.h"
 
