@@ -1,26 +1,25 @@
 NAME = libft.a
-CC = cc
+
+CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
-M_SRCS =	$(wildcard ft_*.c)
-
-M_OBJS = $(M_SRCS:.c=.o)
-B_OBJS = $(B_SRCS:.c=.o)
+SRC = $(wildcard *.c)
+OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(M_OBJS)
-	ar rc $(NAME) $(M_OBJS)
+$(NAME): $(OBJ)
+	ar rcs $(NAME) $(OBJ)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(M_OBJS) $(B_OBJS)
+	rm -f $(OBJ)
 
-fclean:
-	rm -f $(M_OBJS) $(NAME) $(B_OBJS)
+fclean: clean
+	rm -f $(NAME)
 
 re: fclean all
-	
+
 .PHONY: all clean fclean re
