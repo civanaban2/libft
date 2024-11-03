@@ -6,42 +6,11 @@
 /*   By: urmet <urmet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 15:48:53 by urmet             #+#    #+#             */
-/*   Updated: 2024/11/02 17:29:04 by urmet            ###   ########.fr       */
+/*   Updated: 2024/11/03 04:34:03 by urmet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	ft_digits(int n);
-
-char	*ft_itoa(int n)
-{
-	int		sign;
-	int		len;
-	char	*str;
-
-	sign = 1;
-	if (n == -2147483648)
-		return (ft_strdup("-2147483648"));
-	len = ft_digits(n);
-	if (n < 0)
-	{
-		sign = -1;
-		n = -n;
-	}
-	str = (char *)malloc(len + 1);
-	if (!str)
-		return (NULL);
-	str[len--] = '\0';
-	while (len >= 0 && !(sign == -1 && len == 0))
-	{
-		str[len--] = (n % 10) + '0';
-		n /= 10;
-	}
-	if (sign == -1)
-		str[0] = '-';
-	return (str);
-}
 
 static int	ft_digits(int n)
 {
@@ -56,4 +25,32 @@ static int	ft_digits(int n)
 		digits++;
 	}
 	return (digits);
+}
+
+static void	ft_recursive_itoa(char *str, int n, int len)
+{
+	if (n / 10)
+		ft_recursive_itoa(str, n / 10, len - 1);
+	str[len] = n % 10 + '0';
+}
+
+char	*ft_itoa(int n)
+{
+	int		len;
+	char	*str;
+
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	len = ft_digits(n);
+	str = (char *)malloc(len + 1);
+	if (!str)
+		return (NULL);
+	if (n < 0)
+	{
+		str[0] = '-';
+		n = -n;
+	}
+	ft_recursive_itoa(str, n, len - 1);
+	str[len] = '\0';
+	return (str);
 }
