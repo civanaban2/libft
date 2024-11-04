@@ -6,14 +6,9 @@
 /*   By: urmet <urmet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 16:52:38 by cari              #+#    #+#             */
-/*   Updated: 2024/10/22 22:33:46 by urmet            ###   ########.fr       */
+/*   Updated: 2024/11/04 20:26:35 by urmet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-The ft_atoi() function converts the initial portion of the string pointed to by
-str to int representation.
-*/
 
 int	ft_atoi(const char *str)
 {

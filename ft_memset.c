@@ -6,14 +6,9 @@
 /*   By: urmet <urmet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 22:11:32 by cari              #+#    #+#             */
-/*   Updated: 2024/10/22 22:43:16 by urmet            ###   ########.fr       */
+/*   Updated: 2024/11/04 20:32:08 by urmet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-The ft_memset() function writes len bytes of value c (converted to an
-unsigned char) to the string b.
-*/
 
 #include "libft.h"
 

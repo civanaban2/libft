@@ -6,14 +6,9 @@
 /*   By: urmet <urmet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/20 18:03:12 by cari              #+#    #+#             */
-/*   Updated: 2024/10/22 22:40:33 by urmet            ###   ########.fr       */
+/*   Updated: 2024/11/04 20:31:54 by urmet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-The ft_memchr() function locates the first occurrence of c (converted to an
-unsigned char) in string s.
-*/
 
 #include "libft.h"
 
