@@ -6,7 +6,7 @@
 /*   By: urmet <urmet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 00:41:57 by urmet             #+#    #+#             */
-/*   Updated: 2024/11/05 00:45:16 by urmet            ###   ########.fr       */
+/*   Updated: 2024/11/07 14:02:37 by urmet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
+	if (!lst || !f)
+		return ;
 	while (lst)
 	{
 		f(lst->content);

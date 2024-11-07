@@ -6,7 +6,7 @@
 /*   By: urmet <urmet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 14:31:12 by urmet             #+#    #+#             */
-/*   Updated: 2024/11/03 15:13:01 by urmet            ###   ########.fr       */
+/*   Updated: 2024/11/07 13:56:35 by urmet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
+	if (!lst || !new)
+		return ;
 	new->next = *lst;
 	*lst = new;
 }
