@@ -6,13 +6,13 @@
 /*   By: urmet <urmet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/09 20:35:03 by cari              #+#    #+#             */
-/*   Updated: 2025/02/25 13:27:07 by urmet            ###   ########.fr       */
+/*   Updated: 2025/02/25 13:28:56 by urmet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	print_base(unsigned long n, char *base, int *len, char *format)
+static void	print_base(unsigned long n, char *base, int *len, char *format)
 {
 	if (*format == 'd' || *format == 'i')
 	{
@@ -40,14 +40,14 @@ void	print_base(unsigned long n, char *base, int *len, char *format)
 		*len += write(1, &base[n], 1);
 }
 
-void	print_str(char *str, int *len)
+static void	print_str(char *str, int *len)
 {
 	if (!str)
 		str = "(null)";
 	*len += write(1, str, ft_strlen(str));
 }
 
-void	ft_format_control(char *format, va_list arg, int *len)
+static void	ft_format_control(char *format, va_list arg, int *len)
 {
 	char	c;
 
